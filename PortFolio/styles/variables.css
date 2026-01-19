@@ -1,0 +1,43 @@
+/* Variables CSS - Portfolio Personnel */
+:root {
+    /* Palette "Artistic Pink" */
+    --primary-color: #ffb7c5;
+    /* Rose "Sakura" doux */
+    --primary-hover: #ff9eb5;
+    /* Rose un peu plus soutenu */
+    --accent-color: #d4af37;
+    /* Doré pour les détails "cadre" */
+
+    /* Typographie "Artistique" */
+    --font-main: 'Poppins', sans-serif;
+    --font-heading: 'Playfair Display', serif;
+    /* Serif élégant pour les titres */
+
+    /* Transitions */
+    --transition-speed: 0.4s;
+}
+
+/* Thème Clair (Canvas) */
+:root {
+    --bg-body: #fff9fa;
+    /* Blanc cassé très légèrement rosé */
+    --bg-card: rgba(255, 255, 255, 0.85);
+    /* Blanc semi-transparent */
+    --text-main: #5a4a4e;
+    /* Gris-brun doux au lieu de noir dur */
+    --text-muted: #8c7b7f;
+    --border-color: #f0dcdf;
+    --shadow: 0 10px 30px rgba(255, 183, 197, 0.2);
+    /* Ombre rosée douce */
+}
+
+/* Thème Sombre (Nuit Artistique) */
+[data-theme="dark"] {
+    --bg-body: #2c2426;
+    /* Noir chaud/prune très foncé */
+    --bg-card: #3d3235;
+    --text-main: #ffe6ea;
+    --text-muted: #d6c4c9;
+    --border-color: #5e4b50;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}

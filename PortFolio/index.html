@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Personnel</title>
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <h1>Portfolio</h1>
+            </div>
+
+            <nav class="nav" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" data-i18n="nav.home" class="nav-link">Accueil</a></li>
+                    <li><a href="#about" data-i18n="nav.about" class="nav-link">À propos</a></li>
+                    <li><a href="#education" data-i18n="nav.education" class="nav-link">Formation</a></li>
+                    <li><a href="#projects" data-i18n="nav.projects" class="nav-link">Projets</a></li>
+                    <li><a href="#skills" data-i18n="nav.skills" class="nav-link">Compétences</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="controls">
+                <select id="lang-select" aria-label="Language selection">
+                    <option value="fr">FR</option>
+                    <option value="en">EN</option>
+                    <option value="ar">AR</option>
+                </select>
+                <button id="theme-toggle" class="btn-icon" aria-label="Toggle Dark Mode">
+                    🌙
+                </button>
+                <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle Menu">
+                    ☰
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home / Hero Section -->
+        <section id="home" class="section hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 data-i18n="hero.greeting">Bonjour, je suis</h2>
+                    <h1 class="hero-name">Sara AIT TALEB</h1>
+                    <h3 data-i18n="hero.role">Étudiante en développement logiciel et applicatif</h3>
+                    <p data-i18n="hero.description">Passionnée par le développement logiciel...</p>
+                    <a href="#projects" class="btn" data-i18n="hero.cta">Voir mes projets</a>
+                </div>
+                <div class="hero-image">
+                    <img src="images/extra-flower.png" alt="" class="decoration-flourish"
+                        style="position: absolute; top: -50px; right: 0; width: 200px; opacity: 0.8; pointer-events: none; z-index: 0;">
+                    <img src="images/mypic.jpg" alt="Sara AIT TALEB" class="profile-pic"
+                        style="position: relative; z-index: 1;">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container about-container">
+                <div class="about-image">
+                    <img src="images/about-illustration.png" alt="Illustration code artistique" style="width: 100%;">
+                </div>
+                <div class="about-text">
+                    <h2 data-i18n="nav.about">À propos</h2>
+                    <h3 data-i18n="about.title">Qui suis-je ?</h3>
+                    <p data-i18n="about.description">
+                        Je suis une étudiante passionnée par l'informatique....
+                    </p>
+
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <span class="icon">🚀</span>
+                            <h4 data-i18n="about.values.leadership">Leadership</h4>
+                        </div>
+                        <div class="value-card">
+                            <span class="icon">🤝</span>
+                            <h4 data-i18n="about.values.teamwork">Travail d'équipe</h4>
+                        </div>
+                        <div class="value-card">
+                            <span class="icon">💡</span>
+                            <h4 data-i18n="about.values.creativity">Créativité</h4>
+                        </div>
+                        <div class="value-card">
+                            <span class="icon">💪</span>
+                            <h4 data-i18n="about.values.perseverance">Persévérance</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <div class="container">
+                <h2 data-i18n="nav.education" style="text-align: center; margin-bottom: 3rem;">Formation</h2>
+                <div class="timeline">
+                    <!-- Item 1 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <h3 data-i18n="education.item1.degree">Cycle Ingénierie Développement logiciel et applicatif
+                            </h3>
+                            <span class="date">2025 - Présent</span>
+                            <p data-i18n="education.item1.school">ENSA (École Nationale des Sciences Appliquées)</p>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <h3 data-i18n="education.item2.degree">DUT Génie Informatique</h3>
+                            <span class="date">2023 - 2025</span>
+                            <p data-i18n="education.item2.school">EST (École Supérieure de Technologie)</p>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <h3 data-i18n="education.item3.degree">Baccalauréat en sciences physiques</h3>
+                            <span class="date">2023</span>
+                            <p data-i18n="education.item3.school">Lycée Sidi Haj Said</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 data-i18n="nav.projects" style="text-align: center; margin-bottom: 2rem;">Projets</h2>
+
+                <div class="projects-filters">
+                    <button class="filter-btn active" data-filter="all" data-i18n="projects.filter_all">Tous</button>
+                    <button class="filter-btn" data-filter="frontend" data-i18n="projects.filter_frontend">Sans
+                        Backend</button>
+                    <button class="filter-btn" data-filter="backend" data-i18n="projects.filter_backend">Avec
+                        Backend</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card" data-category="backend">
+                        <div class="project-image">
+                            <img src="images/project-inside-mymind.png" alt="Inside My Mind">
+                        </div>
+                        <div class="project-info">
+                            <h3 data-i18n="projects.item1.title">Inside My Mind</h3>
+                            <p data-i18n="projects.item1.shortDesc">Plateforme anonyme de partage de pensées.</p>
+                            <div class="tags">
+                                <span class="tag">HTML/CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">PHP</span>
+                                <span class="tag">MySQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="link-btn btn-details" data-project="item1"
+                                    data-i18n="projects.view_details">Détails</a>
+                                <a href="https://insidemymind.great-site.net/" class="link-btn visit-btn"
+                                    target="_blank" data-i18n="projects.visit_site">Visiter</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card" data-category="frontend">
+                        <div class="project-image">
+                            <img src="images/project-home-menage.png" alt="CleanHome">
+                        </div>
+                        <div class="project-info">
+                            <h3 data-i18n="projects.item2.title">CleanHome</h3>
+                            <p data-i18n="projects.item2.shortDesc">Service de nettoyage à domicile moderne.</p>
+                            <div class="tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="link-btn btn-details" data-project="item2"
+                                    data-i18n="projects.view_details">Détails</a>
+                                <a href="https://webdesign4everyonehere.github.io/-CleanHome/cleanHome/index.html"
+                                    class="link-btn visit-btn" target="_blank"
+                                    data-i18n="projects.visit_site">Visiter</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card" data-category="frontend">
+                        <div class="project-image">
+                            <img src="images/project-PureProClean.png" alt="PureProClean">
+                        </div>
+                        <div class="project-info">
+                            <h3 data-i18n="projects.item3.title">PureProClean</h3>
+                            <p data-i18n="projects.item3.shortDesc">Vente de produits de nettoyage premium.</p>
+                            <div class="tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="link-btn btn-details" data-project="item3"
+                                    data-i18n="projects.view_details">Détails</a>
+                                <a href="https://webdesign4everyonehere.github.io/PureProClean/project/index.html"
+                                    class="link-btn visit-btn" target="_blank"
+                                    data-i18n="projects.visit_site">Visiter</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 (Home Services) -->
+                    <div class="project-card" data-category="backend">
+                        <div class="project-image">
+                            <img src="images/project-home-services.png" alt="Home Services">
+                        </div>
+                        <div class="project-info">
+                            <h3 data-i18n="projects.item4.title">Home Services</h3>
+                            <p data-i18n="projects.item4.shortDesc">Plateforme de mise en relation client/prestataire.
+                            </p>
+                            <div class="tags">
+                                <span class="tag">Laravel</span>
+                                <span class="tag">PHP</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">Tailwind</span>
+                                <span class="tag">Bootstrap</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="link-btn btn-details" data-project="item4"
+                                    data-i18n="projects.view_details">Détails</a>
+                                <a href="videos/project-home-services.mp4" class="link-btn visit-btn" target="_blank"
+                                    data-i18n="projects.view_video">Vidéo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 (Invoice Management) -->
+                    <div class="project-card" data-category="backend">
+                        <div class="project-image">
+                            <img src="images/project-invoice.png" alt="Invoice Management">
+                        </div>
+                        <div class="project-info">
+                            <h3 data-i18n="projects.item5.title">Gestion Factures</h3>
+                            <p data-i18n="projects.item5.shortDesc">SaaS de gestion pour PME.</p>
+                            <div class="tags">
+                                <span class="tag">Laravel</span>
+                                <span class="tag">PHP</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">HTML/CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="link-btn btn-details" data-project="item5"
+                                    data-i18n="projects.view_details">Détails</a>
+                                <a href="videos/project-invoice.mp4" class="link-btn visit-btn" target="_blank"
+                                    data-i18n="projects.view_video">Vidéo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6 (Sublime Restaurant) -->
+                    <div class="project-card" data-category="frontend">
+                        <div class="project-image">
+                            <img src="images/project-restaurant.png" alt="Sublime Restaurant">
+                        </div>
+                        <div class="project-info">
+                            <h3 data-i18n="projects.item6.title">Sublime Restaurant</h3>
+                            <p data-i18n="projects.item6.shortDesc">Site de restaurant marocain.</p>
+                            <div class="tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="link-btn btn-details" data-project="item6"
+                                    data-i18n="projects.view_details">Détails</a>
+                                <a href="https://webdesign4everyonehere.github.io/SublimeRestaurant/Restaurant/restaurant.html"
+                                    class="link-btn visit-btn" target="_blank"
+                                    data-i18n="projects.visit_site">Visiter</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 7 (First Website) -->
+                    <div class="project-card" data-category="frontend">
+                        <div class="project-image">
+                            <img src="images/project-debuteur.png" alt="Mon Premier Site Web">
+                        </div>
+                        <div class="project-info">
+                            <h3 data-i18n="projects.item7.title">Mon Premier Site Web</h3>
+                            <p data-i18n="projects.item7.shortDesc">Exploration cinématographique.</p>
+                            <div class="tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="link-btn btn-details" data-project="item7"
+                                    data-i18n="projects.view_details">Détails</a>
+                                <a href="https://webdesign4everyonehere.github.io/best.github.io/favorites/movie.html"
+                                    class="link-btn visit-btn" target="_blank"
+                                    data-i18n="projects.visit_site">Visiter</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- More Coming Soon Card -->
+                    <div class="project-card empty-card" data-category="all">
+                        <div class="project-info coming-soon-content">
+                            <div class="pulse-icon">🚀</div>
+                            <h3 data-i18n="projects.more_coming.title">Plus à venir...</h3>
+                            <p data-i18n="projects.more_coming.desc">Je travaille actuellement sur de nouveaux projets
+                                passionnants. L'innovation ne s'arrête jamais !</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 data-i18n="nav.skills" style="text-align: center; margin-bottom: 3rem;">Compétences</h2>
+                <div class="skills-grid">
+                    <!-- Technical Skills -->
+                    <div class="skill-category">
+                        <h3 data-i18n="skills.technical">Technique</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">C</span>
+                            <span class="skill-tag">Laravel</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaFX</span>
+                            <span class="skill-tag">MySQL</span>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <div class="skill-category">
+                        <h3 data-i18n="skills.soft">Transversales</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag" data-i18n="about.values.teamwork">Travail d'équipe</span>
+                            <span class="skill-tag" data-i18n="about.values.leadership">Leadership</span>
+                            <span class="skill-tag" data-i18n="about.values.creativity">Créativité</span>
+                            <span class="skill-tag" data-i18n="about.values.perseverance">Persévérance</span>
+                            <span class="skill-tag">Communication</span>
+                            <span class="skill-tag">Gestion du temps</span>
+                        </div>
+                    </div>
+
+                    <!-- Languages -->
+                    <div class="skill-category">
+                        <h3 data-i18n="skills.languages">Langues</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag" data-i18n="languages.ar">Arabe</span>
+                            <span class="skill-tag" data-i18n="languages.fr">Français</span>
+                            <span class="skill-tag" data-i18n="languages.en">Anglais</span>
+                            <span class="skill-tag" data-i18n="languages.zh">Chinois</span>
+                        </div>
+                    </div>
+
+                    <!-- Interests -->
+                    <div class="skill-category">
+                        <h3 data-i18n="skills.interests">Centres d'intérêt</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag" data-i18n="interests.web_dev">Développement web</span>
+                            <span class="skill-tag" data-i18n="interests.learning">Apprentissage</span>
+                            <span class="skill-tag" data-i18n="interests.entertainment">Divertissement</span>
+                            <span class="skill-tag" data-i18n="interests.sports">Sport</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="contact-container">
+                    <div class="contact-content">
+                        <h3 data-i18n="contact.title">Discutons de votre projet</h3>
+                        <p data-i18n="contact.subtitle">Je suis toujours ouverte aux nouvelles opportunités et
+                            collaborations.</p>
+
+                        <div class="contact-actions">
+                            <a href="mailto:saraaittaleb916@gmail.com" class="btn btn-large">
+                                📧 <span data-i18n="contact.email_me">M'envoyer un email</span>
+                            </a>
+                            <a href="assets/monCv.pdf" class="btn btn-large btn-outline"
+                                data-i18n="buttons.download_cv">
+                                📄 Télécharger CV
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Sara AIT TALEB Portfolio</p>
+        </div>
+    </footer>
+
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-title" data-i18n="projects.modal_title">Détails du Projet</h2>
+            <div id="modal-body">
+                <!-- Content will be injected by JavaScript -->
+            </div>
+            <button class="btn btn-close-modal" data-i18n="buttons.close">Fermer</button>
+        </div>
+    </div>
+
+    <script src="scripts/translations.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
